@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+
+$family: "Roboto", sans-serif;
+
+body {
+    font-family: $family;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 1.375rem;
+    color: $black-color;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 1.25rem;
+    color: $black-color;
+}
+
+h3 {
+    font-weight: 500;
+    font-size: 1.125rem;
+    color: $black-color;
+}
+
+h4 {
+    font-weight: 500;
+    font-size: 1rem;
+    color: $black-color;
+}
+
+.description {
+    font-weight: 300;
+    font-size: 0.875rem;
+    color: $disabled-text-color;
+}
+
+.text {
+    font-weight: 400;
+    font-size: 1rem;
+    color: $default-text-color;
+}

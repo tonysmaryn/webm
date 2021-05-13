@@ -1,5 +1,11 @@
 @import "~bulma/bulma";
+@import "./scss/colors.scss";
+@import "./scss/typography.scss";
 @import "./components/header/header.scss";
 @import "./components/filter/filter.scss";
 @import "./components/main/main.scss";
 @import "./components/footer/footer.scss";
+
+body {
+    background-color: $body-background-color;
+}

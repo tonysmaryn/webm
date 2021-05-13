@@ -1,3 +1,19 @@
-.block.header
-    h1 Header
-    
+.block.header.white
+    p Header / Logo
+.block.white
+    .navbar
+        each link in nav
+            a(href=link.href class='navbar-item')
+                p.text=link.text
+.block
+    nav.breadcrumb.has-succeeds-separator
+        ul
+            each breadcrumb, index in breadcrumbs
+                if index === breadcrumbs.length - 1
+                    li.is-active
+                        a(href=breadcrumb.href class)
+                                p=breadcrumb.text
+                else
+                    li
+                        a(href=breadcrumb.href class)
+                                p=breadcrumb.text
