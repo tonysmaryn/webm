@@ -1,0 +1,19 @@
+{
+  "name": "webm",
+  "version": "1.0.0",
+  "description": "test task",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tonysmaryn/webm.git"
+  },
+  "author": "Anton Maryn <tonysmaryn@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tonysmaryn/webm/issues"
+  },
+  "homepage": "https://github.com/tonysmaryn/webm#readme"
+}
