@@ -1,2 +1,50 @@
-.block.filter
-    h1 Filter
+.block.filter.white.p-4
+    h3 26 Results Found 
+    hr
+    .is-flex.is-justify-content-space-between
+        p.text Param 1
+        button(type='button' class='arrow')
+            i.fas.fa-chevron-down
+    .is-flex.is-flex-direction-column
+        .checkbox
+            input(type='checkbox' value='value1' id='value1')
+            label.checkbox(for="value1") Value 1
+        .checkbox
+            input(type='checkbox' value='value2' id='value2')
+            label.checkbox(for="value2") Value 2
+        .checkbox
+            input(type='checkbox' value='value3' id='value3')
+            label.checkbox(for="value3") Value 3
+        .checkbox
+            input(type='checkbox' value='value4' id='value4')
+            label.checkbox(for="value4") Value 4
+        .checkbox
+            input(type='checkbox' value='value5' id='value5')
+            label.checkbox(for="value5") Value 5
+    .is-flex.is-justify-content-space-between
+        p.text Param 2
+        button(type='button' class='arrow')
+            i.fas.fa-chevron-down
+    .is-flex.is-flex-direction-column
+        .checkbox
+            input(type='radio' value='value2_1' id='value6' name='param2')
+            label.checkbox(for="value6") Value 1
+        .checkbox
+            input(type='radio' value='value2_2' id='value7' name='param2')
+            label.checkbox(for="value7") Value 2
+        .checkbox
+            input(type='radio' value='value2_3' id='value8' name='param2')
+            label.checkbox(for="value8") Value 3
+    .is-flex.is-justify-content-space-between
+        p.text Param 3
+        button(type='button' class='arrow')
+            i.fas.fa-chevron-down
+    .is-flex.is-justify-content-space-between
+        input(type="text" placeholder='min' class='param3')
+        input(type="text" placeholder='max' class='param3')
+    .is-flex.is-justify-content-space-between
+        p.text Param 4
+        button(type='button' class='arrow')
+            i.fas.fa-chevron-down
+    input(type="text" placeholder='Keyword' class='param4')
+    button(type='button' class='submit-button') Search
