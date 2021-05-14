@@ -1,2 +1,83 @@
+mixin card(item)
+    .block.white.card.pl-4.pr-4
+        .columns.is-vcentered
+            .column.is-one-quarter
+                img(src=`images/${item.image}`)
+            .column
+                .row.is-justify-content-space-between.mb-4
+                    h3.mr-4=item.title
+                    .row
+                        h3.mr-2=item.price_currency
+                        h3=item.price
+                .columns
+                    .column
+                        .row
+                            h4.mr-4 Brand
+                            p.text=item.make
+                        .row
+                            h4.mr-4 Model
+                            p.text=item.model
+                        .row
+                            h4.mr-4 Type
+                            p.text=item.type
+                    .column        
+                        .row
+                            h4.mr-4 Power
+                            p.text=`${item.power} ${item.power_measure}`
+                        .row
+                            h4.mr-4 Payload
+                            p.text=item.payload
+                        .row
+                            h4.mr-4 Gross weight
+                            p.text=item.gross_weight
+                .row
+                    span.tag.mr-6=item.year
+                    span.tag.mr-6=`${item.mileage} ${item.mileage_measure}`
+                    span.tag.mr-6=item.axle_configuration
+
 .block.main
-    h1 Main 
+    .block
+        h1=page_meta.h1
+    .block
+        .is-flex.is-justify-content-space-between
+            nav.pagination
+                ul.pagination-list
+                    li
+                        a.pagination-link &LT;
+                    li
+                        a.pagination-link.is-current 1
+                    li
+                        a.pagination-link 2
+                    li
+                        a.pagination-link &GT;
+            .block.sort
+                |Sort by
+                div.select.ml-4
+                    select
+                        option Price 
+                        option Year
+    .block
+        each item in stock
+            +card(item)
+    .block
+        .is-flex.is-justify-content-space-between
+            nav.pagination
+                ul.pagination-list
+                    li
+                        a.pagination-link &LT;
+                    li
+                        a.pagination-link.is-current 1
+                    li
+                        a.pagination-link 2
+                    li
+                        a.pagination-link &GT;
+            .block.sort
+                |Sort by
+                div.select.ml-4
+                    select
+                        option Price 
+                        option Year
+    .block
+        each text in page_text
+            p.text.content=text.content
+            

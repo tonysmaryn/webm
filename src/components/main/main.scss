@@ -1,0 +1,26 @@
+.main {
+    .pagination-link {
+        background-color: $white-color;
+        color: #000000;
+    }
+    .is-current {
+        background-color: $primary-color;
+    }
+    .sort {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .content {
+        width: 75%;
+    }
+}
+
+.card {
+    .row {
+        display: flex;
+    }
+    .item-title {
+        margin-right: 20px;
+    }
+}

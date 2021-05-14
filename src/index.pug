@@ -6,10 +6,11 @@ html
         title=page_meta.title
         script(src='https://kit.fontawesome.com/d47bbca5e5.js' crossorigin='anonymous')
     body
-        include components/header/header
-        .columns
-            .column.is-one-quarter
-                include components/filter/filter
-            .column
-                include components/main/main
-        include components/footer/footer
+        .container
+            include components/header/header
+            .columns
+                .column.is-one-quarter
+                    include components/filter/filter
+                .column
+                    include components/main/main
+            include components/footer/footer
