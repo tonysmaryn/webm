@@ -1,0 +1,23 @@
+.footer {
+    background-color: $white-color;
+}
+
+.footer-content {
+    display: flex;
+    margin: 1.5rem 0;
+
+    p {
+        width: 50%;
+        margin-left: 1.5rem;
+    }
+
+    i {
+        width: 30px;
+        height: 30px;
+        color: $body-background-color;
+    }
+
+    a {
+        margin-right: 10px;
+    }
+}
