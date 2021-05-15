@@ -11,6 +11,9 @@
 
 .breadcrumb {
     padding-left: 16px;
+    & p:hover {
+        color: $primary-color;
+    }
 }
 
 .navbar-item {
